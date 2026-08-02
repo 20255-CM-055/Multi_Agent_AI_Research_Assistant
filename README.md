@@ -187,7 +187,7 @@ Multi-Agent-AI-Research-Assistant
 ## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Multi-Agent-AI-Research-Assistant.git
+git clone https://github.com/20255-CM-055/Multi_Agent_AI_Research_Assistant.git
 ```
 
 ```
@@ -319,70 +319,4 @@ Deletes a research session.
 ```
 POST /research/followup
 ```
-
-Answers contextual follow-up questions based on previous research.
-
----
-
-# Screenshots
-
-> Add screenshots after deployment.
-
-Suggested screenshots:
-
-- Home Page
-- Live Research Progress
-- Generated Research Report
-- Follow-up Chat
-- Research History
-- PDF Export
-
----
-
-# Future Improvements
-
-- Authentication
-- Multi-user Support
-- Cloud Database
-- Research Sharing
-- Citation Export
-- Semantic Search
-- Multiple LLM Support
-- Docker Deployment
-- Cloud Hosting
-- Advanced Source Ranking
-
----
-
-# Learning Outcomes
-
-This project demonstrates practical experience with:
-
-- Multi-Agent AI Systems
-- Retrieval-Augmented Generation (RAG)
-- Agent Orchestration
-- LangGraph
-- LangChain
-- FastAPI
-- REST APIs
-- SQLite
-- React
-- Tailwind CSS
-- State Management
-- Server-Sent Events (SSE)
-- Full-Stack Development
-
----
-
-# Acknowledgements
-
-- FastAPI
-- LangGraph
-- LangChain
-- Groq
-- Tavily Search
-- React
-- Tailwind CSS
-
----
 
