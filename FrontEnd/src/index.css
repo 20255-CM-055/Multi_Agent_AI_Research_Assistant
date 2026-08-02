@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===========================
+   PDF Export Styles
+=========================== */
+
+.pdf-export {
+  padding: 0 !important;
+}
+
+.pdf-export .report-title {
+  font-size: 2rem !important;
+  line-height: 1.2 !important;
+}
+
+.pdf-export .report-subtitle {
+  font-size: 0.95rem !important;
+}
+
+.pdf-export .report-meta {
+  font-size: 0.8rem !important;
+  gap: 0.75rem !important;
+}
+
+.pdf-export button {
+  display: none !important;
+}
+
+.pdf-export .report-content {
+  padding: 1.5rem !important;
+}
+
+.pdf-export .report-content p,
+.pdf-export .report-content li {
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+}
+
+.pdf-export .report-content h1 {
+  font-size: 1.8rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.pdf-export .report-content h2 {
+  font-size: 1.4rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.pdf-export .report-content h3 {
+  font-size: 1.15rem !important;
+  margin-top: 1.2rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.pdf-export .report-content ul,
+.pdf-export .report-content ol {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.pdf-export .report-content {
+  max-width: 100% !important;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+}
+
+/* ---------- Light Theme ---------- */
+
+html:not(.dark) {
+  scrollbar-color: #cbd5e1 #f8fafc;
+}
+
+html:not(.dark) ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html:not(.dark) ::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 2px solid #f8fafc;
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ---------- Dark Theme ---------- */
+
+html.dark {
+  scrollbar-color: #4b5563 #111827;
+}
+
+html.dark ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 9999px;
+  border: 2px solid #111827;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
