@@ -30,17 +30,6 @@ class VectorStore:
             metadatas=[metadata],
         )
 
-    # def search(
-    #     self,
-    #     query,
-    #     top_k=5,
-    # ):
-    #     embedding = generate_embedding(query)
-
-    #     return self.collection.query(
-    #         query_embeddings=[embedding],
-    #         n_results=top_k,
-    #     )
         
     def search_documents(
         self,
