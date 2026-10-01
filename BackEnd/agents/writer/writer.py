@@ -13,38 +13,7 @@ class WriterAgent:
 
     def __init__(self) -> None:
         self.llm = LLMService()
-# ***********
-    # def _format_documents(self, state: ResearchState) -> str:
-    #     """
-    #     Converts retrieved documents into
-    #     a prompt-friendly format.
-    #     """
 
-    #     return "\n\n".join(
-    #         f"""
-    #     ========================
-    #     Document [{index}]
-    #     ========================
-
-    #     Title:
-    #     {doc.title}
-
-    #     Source:
-    #     {doc.source}
-
-    #     URL:
-    #     {doc.url}
-
-    #     Content:
-    #     {doc.content}
-    #     """
-    #         for index, doc in enumerate(
-    #             state["retrieved_documents"] or [],
-    #             start=1,
-    #         )
-    #     )
-    #         for doc in state["retrieved_documents"] or []
-    #     )
     def _format_documents(self, state: ResearchState) -> str:
         """
         Converts retrieved documents into
@@ -137,11 +106,6 @@ class WriterAgent:
                 f"Failed to save report to Knowledge Base: {e}"
             )
         
-        
-        
-
-        # state["final_report"] = report
-        # state["current_agent"] = "Writer"
         state["final_report"] = report
 
         state["used_sources"] = [
