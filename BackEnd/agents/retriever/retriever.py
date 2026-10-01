@@ -12,8 +12,6 @@ class RetrieverAgent:
     Retrieves relevant documents from the web.
     """
 
-    # def __init__(self) -> None:
-    #     self.search_service = SearchService()
         
     def __init__(self) -> None:
         self.search_service = SearchService()
@@ -25,9 +23,6 @@ class RetrieverAgent:
         state: ResearchState,
     ) -> ResearchState:
 
-        # query = state["query"]
-
-        # results = self.search_service.search(query)
         documents = []
         
         memory_documents = self.memory_service.search(
@@ -57,28 +52,6 @@ class RetrieverAgent:
 
                 documents.append(document)
 
-
-    # ********************
-        # documents = self._remove_duplicates(documents)
-
-        # memory_count = sum(
-        #     1 for doc in documents
-        #     if doc.source == "Memory"
-        # )
-
-        # web_count = sum(
-        #     1 for doc in documents
-        #     if doc.source == "Tavily"
-        # )
-
-        # logger.info(
-        #     f"Retriever collected "
-        #     f"{memory_count} memory docs and "
-        #     f"{web_count} web docs."
-        # )
-
-        # documents = documents[:15]
-        # *********************
         documents = self._remove_duplicates(documents)
 
         documents = self.ranking_service.rank(
@@ -122,7 +95,6 @@ class RetrieverAgent:
 
             key = (
                 document.title.strip().lower(),
-                # hash(document.content.strip()),
                 document.content.strip(),
             )
 
